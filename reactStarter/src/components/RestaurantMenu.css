@@ -1,0 +1,35 @@
+.menuCardContent{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.menuCard{
+    /* border-bottom: 1px solid #ccc; */
+    border-radius: 12px;
+    padding: 16px;
+}
+.menuCardTitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+.gwiDoh > ::before {
+    content: "₹";
+    margin-right: 0.1rem;
+}
+.menuCardImage{
+    border-radius: 17px;
+    
+}
+.detailCardOuter{
+    background: linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%);
+    padding: 0px 16px 16px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+.detailCardInner{
+    border-radius: 20px;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 8px 16px 0px
+}

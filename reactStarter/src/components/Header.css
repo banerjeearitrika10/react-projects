@@ -1,0 +1,19 @@
+.login{
+    border: none;
+    background-color:brown;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: -10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: brown;
+}
+.nav ul li a.active {
+    font-weight: 600; /* Apply desired styling for active link */
+    font-family: 'Arial', sans-serif;
+    color: brown;
+}
