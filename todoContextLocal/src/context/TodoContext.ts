@@ -1,5 +1,8 @@
 import { createContext, useContext } from "react";
 
+//This creates a Context object.
+//It defines the shape of the data that will be shared.
+//These are fallback values if a component uses the context without a provider.
 export const TodoContext = createContext({
     todos:[
         {
@@ -8,6 +11,9 @@ export const TodoContext = createContext({
             completed:false,
         }
     ],
+    //The underscore means:
+    // This parameter is intentionally unused.
+    // This avoids TypeScript / ESLint warnings.
     addTodo:(_todo: any)=>{},
     deleteTodo:(_id:any)=>{},
     updateTodo:(_id:any,_todo:{})=>{},
@@ -18,6 +24,13 @@ export const TodoContext = createContext({
 
 export const TodoContextProvider = TodoContext.Provider;
 
+
+//This is a custom hook wrapper.
+//Instead of writing:
+//const context = useContext(TodoContext);
+//We write:
+//const context = useTodoContext();
+//Cleaner and reusable.
 export function useTodoContext(){
     return useContext(TodoContext);
 }

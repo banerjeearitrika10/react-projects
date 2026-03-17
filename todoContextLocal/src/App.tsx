@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from 'react'
+import {useEffect, useState } from 'react'
 import './App.css'
 import { TodoContextProvider } from './context/TodoContext';
 import AddTodoForm from './components/AddTodoForm';
